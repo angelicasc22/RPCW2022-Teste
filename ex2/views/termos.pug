@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div.w3-container
+    h1 Termos de índice
+    a(href='/') [ Voltar ]
+    table.w3-table.w3-striped.w3-border.w3-hoverable
+      tr
+        th Termo
+        th ID da Classe
+        th Título da Classe
+      each termo in termos
+        tr
+          td
+            a(name=termo.id)/
+            | #{termo.termo}
+          td
+            a(href='/' + termo.idClasse)= termo.idClasse
+          td
+            a(href='/' + termo.idClasse)= termo.tituloClasse
+      

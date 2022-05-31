@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM 'ProjectRecord.dtd'>
+<pr>
+    <meta>
+        <key>RPCW2022:Teste</key>
+        <title>Teste RPCW 2022</title>
+        <bdate>2022-05-31</bdate>
+        <edate>2022-05-31</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+    </meta>
+    <team>
+        <member id="PG47024">
+            <name>Angélica Cunha</name>
+            <email>pg47024@alunos.uminho.pt</email>
+            <link url="https://github.com/angelicasc22" />
+        </member>
+    </team>
+    <abstract>
+        
+        <p>
+           <b>Exercício 1 :</b> Este data cleansing teve os seguintes passos:
+        </p>
+        <p>
+            1) Por opção retirei os a acentuação das tags (recorrendo ao Search and Replace do VSCode);
+        </p>
+        <p>
+            2) Separei em 2 datasets um de cidades e outro de ligações
+        </p>
+
+        <p>
+            Comando de inserção no mongo: mongoimport --jsonArray -d MAPA2022 -c ligacao ligacoes.json
+            mongoimport --jsonArray -d MAPA2022 -c cidade cidades.json
+        </p>
+        <p>
+        Foram criadas 2 pastas:
+        </p>
+        <p>
+            1) ./api-server que contém o servidor de API; Está a correr na porta 3000, para correr basta npm i -> npm start;
+        </p>  
+        <p>
+            2) ./app-server que contém o servidor de interface; Está a correr na porta 3001, para correr basta npm i -> npm start; 
+        </p>   
+        <p>
+        A autenticação está feita logo na primeira vez que correr o programa, não vai aparecer a página principal, basta fazer refresh à página. O token que foi gerado e guardado nos cookies.
+        </p>
+
+    </abstract>
+    <deliverables>
+        <link url="./ex1"> Servidor da API de dados pedida no primeiro exercício</link>
+        <link url="./ex2"> Servidor da interface pedida no segundo exercício</link>
+        <link url="aquecimento/">aquecimento/ - Scripts utilizados para responder ao aquecimento do exercício 2</link>
+    </deliverables>
+</pr>

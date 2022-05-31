@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.w3-container
+    h1 Classe #{classe.codigo}
+    ul.w3-ul.w3-border
+      li Código: #{classe.codigo}
+      li Título: #{classe.titulo}
+      li Descrição: #{classe.descricao}
+      li Descendentes: 
+        ul.w3-ul
+          each filho in classe.filhos
+            li
+              a(href='/' + filho.codigo) #{filho.codigo} - #{filho.titulo}
+          else
+            li Não existem classes.
+
+    a(href='/' + classe.codigo.split('.').splice(0, classe.nivel - 1).join('.')) [ Voltar ]

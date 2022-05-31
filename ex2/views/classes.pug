@@ -1,0 +1,10 @@
+iv.w3-container
+    h1 Classes CLAV
+
+    h3 Código - Título
+    ul.w3-ul.w3-border
+      each classe in classes
+        li
+          a(href='/' + classe.codigo) #{classe.codigo} - #{classe.titulo}
+
+    a(href='/') [ Voltar ]
