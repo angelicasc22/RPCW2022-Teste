@@ -37,10 +37,10 @@
         Foram criadas 2 pastas:
         </p>
         <p>
-            1) ./api-server que contém o servidor de API; Está a correr na porta 3000, para correr basta npm i -> npm start;
+            1)  ./ex1 que contém o servidor de API; Está a correr na porta 3000, para correr basta npm i -> npm start;
         </p>  
         <p>
-            2) ./app-server que contém o servidor de interface; Está a correr na porta 3001, para correr basta npm i -> npm start; 
+            2) ./ex2 que contém o para o ex2; Está a correr na porta 3001, para correr basta npm i -> npm start; 
         </p>   
         <p>
         A autenticação está feita logo na primeira vez que correr o programa, não vai aparecer a página principal, basta fazer refresh à página. O token que foi gerado e guardado nos cookies.
